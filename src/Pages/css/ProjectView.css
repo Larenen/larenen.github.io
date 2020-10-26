@@ -119,3 +119,9 @@ ul {
 p {
   padding-left: 10px;
 }
+
+.resources-info {
+  display: inline-block;
+  padding: 8px 18px;
+  overflow: hidden;
+}

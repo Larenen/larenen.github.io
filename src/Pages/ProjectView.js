@@ -91,10 +91,11 @@ export default function ProjectView(props) {
                 <section className="section">
                     <h2 className="title">Resources</h2>
                     <hr/>
-                    <p>
-                        This project is available at <a className="box-fill" target="_blank" rel="noopener noreferrer" href={projectUrl[id-1]}>{projectUrl[id-1]}</a>
-                        {githubUrl[id-1].length > 0 ? <span><br/>Project source <a className="box-fill" target="_blank" rel="noopener noreferrer" href={githubUrl[id-1]}>GitHub</a></span> : null}
-                    </p>
+                    <div>
+                        <span className="resources-info">This project is available at</span>
+                        <a className="box-fill" target="_blank" rel="noopener noreferrer" href={projectUrl[id-1]}>{projectUrl[id-1]}</a>
+                    </div>
+                    {githubUrl[id-1].length > 0 ? <div> <span className="resources-info">Project source</span> <a className="box-fill" target="_blank" rel="noopener noreferrer" href={githubUrl[id-1]}>GitHub</a></div> : null}
                 </section>
                 : null
             }
